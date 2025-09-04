@@ -18,4 +18,25 @@ let body = document.querySelector("body");
 
 body.addEventListener("click", () => {
     burger.classList.toggle("lock");
-})
+});
+
+
+const popup = document.querySelector('.pop-up');
+const bannerButton = document.querySelector('.top-banner_button'); // Кнопка, чтобы открыть
+const crossModal = document.querySelector('.pop-up_cross');
+
+if (bannerButton) {
+    bannerButton.addEventListener('click', () => {
+        popup.classList.add('active');
+    });
+}
+
+crossModal.addEventListener('click', () => {
+    popup.classList.remove('active');
+});
+
+popup.addEventListener('click', (e) => {
+    if (e.target === popup) {
+        popup.classList.remove('active');
+    }
+});
