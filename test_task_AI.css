@@ -21,6 +21,7 @@
         height: 100%;
         margin: 0;
         padding: 0;
+        background-color: #0c0d12;
     }
 
     .header {
@@ -131,9 +132,234 @@
         /*display: flex;*/
     }
 
-    .main_container {
-        margin: 0 260px;
+    .menu_link:hover {
+        color: #f706a3;
     }
+
+    .menu_link:active {
+        color: #ca0078;
+    }
+
+    .menu_link:disabled {
+        color: #ca0078;
+    }
+
+    .menu_button:hover {
+        color: #fff;
+        background: #f706a3;
+        border: #f706a3;;
+    }
+
+    .menu_button:active {
+        background: #ca0078;
+        color: #0c0d12;
+        border: #ca0078;
+    }
+
+    .menu_button:disabled {
+        background: #ca0078;
+        opacity: 0.3;
+        color: #0c0d12;
+        border: #ca0078;
+    }
+
+    .main_container {
+        /*margin: 0 260px;*/
+
+    }
+
+    .top-banner {
+        padding-top: 195px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        width: 100%;
+        height: 726px;
+        /*background: #fff;*/
+    }
+
+    .top-banner_img {
+        width: 640px;
+    }
+
+    .top-banner_content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .top-banner_item1 {
+        font-family: "Involve", sans-serif;
+        font-weight: 500;
+        font-size: 120px;
+        line-height: 90%;
+        letter-spacing: 0.02em;
+        background: linear-gradient(90deg, #f706a3 0%, #5a73ef 44%, #81f3f8 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 0;
+    }
+
+    .top-banner_item2 {
+        font-family: "Involve", sans-serif;
+        font-weight: 500;
+        font-size: 80px;
+        line-height: 90%;
+        letter-spacing: 0.02em;
+        color: #fff;
+        margin: 0;
+        padding-top: 11px;
+    }
+
+    .top-banner_item3 {
+        font-family: "Evolventa", sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 110%;
+        color: #fff;
+        margin: 0;
+        padding-top: 30px;
+    }
+
+    .top-banner_button {
+        border-radius: 18px;
+        border: #ca0078;
+        padding: 18px 24px;
+        margin-top: 72px;
+        width: 348px;
+        height: 62px;
+        background: #ca0078;
+        font-family: "Evolventa", sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 110%;
+        color: #fff;
+    }
+
+    .top-banner_button:hover {
+        box-shadow: 0 0 30px 2px #f706a3;
+        background: #fff;
+        color: #0c0d12;
+        cursor: pointer;
+    }
+
+    .top-banner_button:active {
+        background: #fff;
+        color: #0c0d12;
+        cursor: pointer;
+        box-shadow: none;
+    }
+
+    .top-banner_button:disabled {
+        background: #fff;
+        opacity: 0.3;
+        color: #0c0d12;
+    }
+
+
+    .advantages {
+        position: relative;
+        /*overflow: hidden;*/
+
+    }
+
+    .advantages_background {
+        font-family: "Involve", sans-serif;
+        font-weight: 700;
+        font-size: 213px;
+        line-height: 90%;
+        letter-spacing: 0.02em;
+        text-align: center;
+        text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        margin-top: 75px;
+        margin-bottom: 0;
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+        color: transparent;
+
+    }
+
+    .advantages_title {
+        position: relative;
+        z-index: 2;
+        margin-top: 96px;
+        margin-bottom: 0;
+        font-family: "Involve", sans-serif;
+        font-weight: 500;
+        font-size: 80px;
+        line-height: 90%;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #fff;
+        /*padding: 0 15px 0 15px;*/
+    }
+
+    .advantages_text {
+        font-family: "Evolventa", sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 110%;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 96px;
+        padding: 0 500px;
+    }
+
+    .advantages_text__highlight {
+        color: #f706a3;
+    }
+
+    .services {
+        padding-left: 10vw;
+        padding-bottom: 54px;
+        width: 1400px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+    .services_card {
+        margin: 0 30px 30px 0;
+        display: flex;
+        background: #161524;
+        border-radius: 18px;
+        padding: 10px;
+        width: 450px;
+        height: 332px;
+        z-index: 3;
+    }
+
+    .services_card__content {
+        padding: 30px;
+    }
+
+    .services_card__title {
+        font-family: "Evolventa", sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 110%;
+        color: #fff;
+    }
+
+    .services_card__text {
+        font-family: "Evolventa", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 110%;
+        color: #fff;
+
+    }
+
+
+    /*@media (max-width: 1920px)*/
 
     @media (min-width: 767px) {
         .menu_list li {
@@ -285,6 +511,7 @@
             user-select: none;
         }
 
+
         .menu_button {
             border-radius: 9px;
             padding: 15px 24px;
@@ -294,14 +521,16 @@
             border: #f706a3;
             text-align: center;
             margin-bottom: 30px;
-            user-select: none;
         }
 
         .menu_button:active {
             background: #ca0078;
             color: #0c0d12;
             border: #ca0078;
-            user-select: none;
+        }
+
+        .menu_button:hover {
+            color: #fff;
         }
 
         .menu_button:disabled {
@@ -309,9 +538,12 @@
             opacity: 0.3;
             color: #0c0d12;
             border: #ca0078;
-            user-select: none;
         }
 
+        .main {
+            background-color: #0c0d12;
+            /*width: 100%;*/
+        }
 
         .main_container {
             margin: 0;
@@ -336,49 +568,25 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            /*background: #fff;*/
         }
 
         .top-banner_img {
             width: 100%;
         }
 
-        .top-banner_content {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            flex-direction: column;
-        }
-
         .top-banner_item1 {
-            font-family: "Involve", sans-serif;
-            font-weight: 500;
             font-size: 52px;
-            line-height: 90%;
-            letter-spacing: 0.02em;
-            background: linear-gradient(90deg, #f706a3 0%, #5a73ef 44%, #81f3f8 100%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
             margin: 0;
         }
 
         .top-banner_item2 {
-            font-family: "Involve", sans-serif;
-            font-weight: 500;
             font-size: 36px;
-            line-height: 90%;
-            letter-spacing: 0.02em;
-            color: #fff;
             margin: 0;
             padding-top: 11px;
         }
 
         .top-banner_item3 {
-            font-family: "Evolventa", sans-serif;
-            font-weight: 400;
             font-size: 16px;
-            line-height: 110%;
             color: #fff;
             margin: 0;
             padding-top: 30px;
@@ -386,17 +594,11 @@
 
         .top-banner_button {
             border-radius: 9px;
-            border: #ca0078;;
             padding: 15px 24px;
             width: 300px;
             height: 48px;
-            background: #ca0078;
             margin-top: 30px;
-            font-family: "Evolventa", sans-serif;
-            font-weight: 400;
             font-size: 16px;
-            line-height: 110%;
-            color: #fff;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -409,11 +611,11 @@
         /*    color: #0c0d12;*/
         /*user-select: none;*/
         /*}*/
-        .top-banner_button:active {
-            background: #fff;
-            color: #0c0d12;
-            border: #fff;
-        }
+        /*.top-banner_button:active {*/
+        /*    background: #fff;*/
+        /*    color: #0c0d12;*/
+        /*    border: #fff;*/
+        /*}*/
 
         .top-banner_button:disabled {
             background: #fff;
@@ -496,19 +698,11 @@
         }
 
         .services_card__title {
-            font-family: "Evolventa", sans-serif;
-            font-weight: 400;
             font-size: 16px;
-            line-height: 110%;
-            color: #fff;
         }
 
         .services_card__text {
-            font-family: "Evolventa", sans-serif;
-            font-weight: 400;
             font-size: 12px;
-            line-height: 110%;
-            color: #fff;
 
         }
 
