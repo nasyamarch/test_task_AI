@@ -1,17 +1,17 @@
 let burger = document.querySelector(".header_burger__mobile");
 let menuMobile = document.querySelector(".menu_mobile");
-let mainContainer = document.querySelector(".main_container");
+let cover = document.querySelector(".cover");
 
 burger.addEventListener("click", () => {
     burger.classList.toggle("active");
     menuMobile.classList.toggle("active");
-    mainContainer.classList.toggle("active");
+    cover.classList.toggle("active");
 });
 
-mainContainer.addEventListener("click", () => {
+cover.addEventListener("click", () => {
     burger.classList.remove("active");
     menuMobile.classList.remove("active");
-    mainContainer.classList.remove("active");
+    cover.classList.remove("active");
 });
 
 let body = document.querySelector("body");
