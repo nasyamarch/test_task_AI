@@ -1,20 +1,49 @@
 @font-face {
     font-family: 'Involve';
-    src: url(involve-regular1-webfont.woff2) format('woff2'),
-    url(involve-regular1-webfont.woff) format('woff');
-    font-weight: 100 900;
+    src: url('involve-regular1-webfont.woff2') format('woff2'),
+    url('involve-regular1-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src:
+    url(involve-medium1-webfont.woff) format('woff'),
+    url(involve-medium1-webfont.woff2) format('woff2');
+
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Involve';
+    src: url('involve-mediumoblique1-webfont.woff2') format('woff2'),
+    url('involve-mediumoblique1-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: oblique;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Evolventa';
+    src: url('evolventa-regular1-webfont.woff2') format('woff2'),
+    url('evolventa-regular1-webfont.woff') format('woff');
+    font-weight: 400 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Evolventa';
-    src: url(evolventa-regular1-webfont.woff2) format('woff2'),
-    url(evolventa-regular1-webfont.woff) format('woff');
-    font-weight: 100 900;
-    font-style: normal;
+    src: url('evolventa-oblique1-webfont.woff2') format('woff2'),
+    url('evolventa-oblique1-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: oblique;
     font-display: swap;
 }
+
 
 html, body {
     height: 100%;
@@ -25,8 +54,7 @@ html, body {
 
 .cover.active {
     backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(10px);
-    /*background: #0c0d12;*/
+    -webkit-backdrop-filter: blur(9px);
     background: rgba(12, 13, 18, 0.3);
     height: 100%;
     margin: 0;
@@ -47,7 +75,7 @@ html, body {
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(9px);
     background: rgba(12, 13, 18, 0.3);
     transition: 0.3s;
 }
@@ -81,6 +109,7 @@ html, body {
     margin-top: 15px;
     margin-bottom: 0;
 }
+
 .pop-up_text {
     font-family: "Evolventa", sans-serif;
     font-weight: 400;
@@ -90,10 +119,12 @@ html, body {
     color: #fff;
     margin-top: 15px;
 }
+
 .pop-up_image {
     width: 359px;
     height: 324px;
 }
+
 .pop-up_form {
     width: 568px;
     /*height: 154px;*/
@@ -103,6 +134,7 @@ html, body {
     justify-content: center;
     text-align: center;
 }
+
 .form_input {
     border-radius: 18px;
     /*padding: 18px 24px;*/
@@ -118,11 +150,13 @@ html, body {
     opacity: 0.2;
     margin-bottom: 30px;
 }
+
 .form_input:focus {
     border: 1px solid #81f3f8;
     color: #fff;
     opacity: 1;
 }
+
 .form_error {
     display: none;
     font-family: "Evolventa", sans-serif;
@@ -135,6 +169,7 @@ html, body {
     margin-bottom: 15px;
     margin-top: 10px;
 }
+
 .form_input.form_input__error {
     border: 1px solid #f706a3;
     color: #f706a3;
@@ -155,15 +190,18 @@ html, body {
     line-height: 110%;
     color: #fff;
 }
+
 .pop-up_button:active {
     background: #ca0078;
     color: #0c0d12;
 }
+
 .pop-up_button:disabled {
     background: #ca0078;
     opacity: 0.3;
     color: #0c0d12;
 }
+
 .pop-up_cross {
     position: relative;
     top: 15px;
@@ -191,7 +229,6 @@ html, body {
 .pop-up_cross:after {
     transform: rotate(-45deg);
 }
-
 
 
 .header {
@@ -233,6 +270,9 @@ html, body {
     flex-direction: row;
     text-decoration: none;
     user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     /*flex: 2;*/
 }
 
@@ -773,16 +813,20 @@ html, body {
         margin-top: 15px;
         margin-bottom: 0;
     }
+
     .pop-up_text {
         font-size: 16px;
         margin-top: 15px;
     }
+
     .pop-up_image {
         width: 170px;
     }
+
     .pop-up_form {
         width: 250px;
     }
+
     .form_input {
         box-sizing: border-box;
         border-radius: 9px;
@@ -791,15 +835,23 @@ html, body {
         height: 36px;
         font-size: 16px;
         margin-bottom: 15px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
     }
+
     .form_error {
         font-size: 12px;
         margin-bottom: 10px;
         margin-top: 5px;
     }
+
     .form_input.form_input__error {
         height: 36px;
         margin-bottom: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
     }
 
     .pop-up_button {
@@ -884,17 +936,21 @@ html, body {
     .header_burger__mobile:before {
         top: 0;
     }
+
     .header_burger__mobile:after {
         bottom: 0;
     }
+
     .header_burger__mobile.active:before {
         transform: rotate(45deg);
         top: 6px;
     }
+
     .header_burger__mobile.active:after {
         transform: rotate(-45deg);
         bottom: 6px;
     }
+
     .header_burger__mobile.active span {
         transform: scale(0);
     }
@@ -912,6 +968,9 @@ html, body {
         top: 0;
         transition: all 0.6s ease 0s;
         user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
     }
 
     .menu_list {
@@ -930,6 +989,9 @@ html, body {
         text-align: center;
         background-color: #0c0d12;
         user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
     }
 
     .menu_link, .header_burger__mobile, .header_logo, .menu_button, .top-banner_button {
@@ -947,7 +1009,6 @@ html, body {
     .menu_link {
         font-size: 16px;
         background-color: #0c0d12;
-        user-select: none;
     }
 
 
@@ -960,6 +1021,9 @@ html, body {
         border: #f706a3;
         text-align: center;
         margin-bottom: 30px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
     }
 
     .menu_button:active {
@@ -1050,6 +1114,9 @@ html, body {
         align-items: center;
         justify-content: center;
         align-self: center;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
     }
 
     .top-banner_button:hover {
@@ -1057,6 +1124,9 @@ html, body {
         background: #fff;
         color: #0c0d12;
         user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
     }
 
     .top-banner_button:active {
