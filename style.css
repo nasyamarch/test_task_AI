@@ -154,6 +154,8 @@ html, body {
 
 .form_input:focus {
     border: 1px solid #81f3f8;
+    color: #fff;
+    opacity: 1;
 }
 .form_input::placeholder {
     color: #fff;
